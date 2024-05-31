@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9581D05-1C88-40F0-AE77-C1BF58E796EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GenerateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateReports.Designer.cs">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnPage.Designer.cs">
+      <DependentUpon>ReturnPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarTire_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarTire_List.Designer.cs">
+      <DependentUpon>CarTire_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageReturn.Designer.cs">
+      <DependentUpon>ManageReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPersonalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPersonalInformation.Designer.cs">
+      <DependentUpon>EditPersonalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalInformation.Designer.cs">
+      <DependentUpon>PersonalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateOrder.Designer.cs">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryManagerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryManagerPanel.Designer.cs">
+      <DependentUpon>InventoryManagerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryStatus.Designer.cs">
+      <DependentUpon>InventoryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchProduct.Designer.cs">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesManagerPanel.Designer.cs">
+      <DependentUpon>SalesManagerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GenerateReports.resx">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnPage.resx">
+      <DependentUpon>ReturnPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarTire_List.resx">
+      <DependentUpon>CarTire_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReturn.resx">
+      <DependentUpon>ManageReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPersonalInformation.resx">
+      <DependentUpon>EditPersonalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalInformation.resx">
+      <DependentUpon>PersonalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOrder.resx">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryManagerPanel.resx">
+      <DependentUpon>InventoryManagerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryStatus.resx">
+      <DependentUpon>InventoryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchProduct.resx">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManagerPanel.resx">
+      <DependentUpon>SalesManagerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-3d-illustration-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_428116625_7bpn1ZTdPnM2iYZgWUsqGIE5pvhUpGYn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BHo1QHQCAAAR88H.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main-hero-truck-wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8fc8244-a725-4dc6-8cd5-e6b8582bb472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8fc8244-a725-4dc6-8cd5-e6b8582bb4721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EFB-65_650_LB3_250_80_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aft_s.0006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-car-exhaust-pipe-muffler-steering-wheel-realistic-3d-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8fc8244-a725-4dc6-8cd5-e6b8582bb4722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2015_PES_Alternator_Leaders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg-2023-03-07T112316.876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS-Chrome_s-3001.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
